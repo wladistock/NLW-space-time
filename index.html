@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- (DPCTYPE html diz q o tipo de documento é um documento HTML, só colocar o .html no arquivo não é o suficiente para a identificacao) -->
+
+<html lang="pt-br">
+  <!-- quando digito html aparece uma opcao q é "html:5", o nome dessas opções são snippets, eles são atalhos q irão gerar códigos para mim, como por exemplo uma parte dessa estrutura html q está logo a baixo -->
+  <head>
+    <!-- é a cabeça do site, onde ficam as configurações e informações do site -->
+    <meta charset="UTF-8" />
+    <!-- opção q mostra os acentos, caracteres especiais tipo "ç" e etc, caso nao tenha essa opcao charset na página, quando digitado o texto com algum carater especial, acento e etc aparece para o usuario uma interrogação no lugar do caracter especial  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- meta de compatilidade do navegador -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- abre o site com uma escala de 1 e usa como referencia a propria largura do
+    dispositivo(device-width) q está sendo aberto -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- foi puxada uma fonte direto do google para a pagina -->
+
+    <title>NLW Spacetime</title>
+    <!-- é o titlo do site, aparce ao lado de onde fecha a aba -->
+    <link rel="icon" type="image.png" href="./assets/favicon.png" />
+    <!-- icone q vai ao lado do nome do site, rel diz q é um icone, type é o tipo de arquivo que no caso é uma imagem/png, href é para dizer a onde o arquivo no caso a imagem está ai vem o "./" q serve para informar q o arquivo está partindo do diretório(pasta) onde esse arquivo está.   -->
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- somente com o um documento css eu não consigo concretizar as mudanças na
+    pagina, para isso preciso conectar/linkar os dois arquivos atraves da tag
+    (link), no caso aqui o link:css . no caso aqui nos temos o link (conexão) o
+    rel seria o tipo dessa conexão no caso (stylesheet)"folha de estilo" e o
+    href seria onde esse arquivo está salvo -->
+  </head>
+  <body>
+    <!-- body é o corpo do site, nela é onde fica o contúdo q irá aparecer para quem acessar o site -->
+    <aside>
+      <!-- aside é aquele conteudo q ao lado  -->
+      <img src="./assets/logo.svg" alt="Logo NLW Spacetime" />
+      <img src="./assets/ednardo.jpeg" alt="Foto do Ednardo">
+
+      <p>
+        Cápsula do tempo de<br /> 
+        <strong>Ednardo Gomes<br /></strong>
+      </p>
+      <span>Feito com 💜 no NLW Rocketseat</span>
+    </aside>
+    <nav>
+      <!-- nav é uma tag de navegacao, vai ter muito informação na pagina(memorias) e nao vai da pra ver tudo em tamanho bom somente na tela então a nav permite q você navegue através do scholl do mouse pra cima e para baixo para ver o restante das informações -->
+      <a
+        href="https://www.youtube.com/watch?v=izXLorq9UIk&t=1304s"
+        target="_blank"
+        class="memory"
+      >
+        <!-- DIV é um grupo q foi criado para colocar os elementos dentro, para não ficarem soltos no corpo(body) so script, no caso eles ficaram dentro da DIV, mas foi feito uma troca para o "A" q é no caso foi para criar um link. se eu só adicionar o link, ele abre o novo site por cima do meu atual e no caso aqui não queremos assim, então adicionei o target _blank q força o link ser aberto em outra guia, ficando assim o atual e o novo site abertos -->
+        <!-- a classe é usada quando se quer aproveita-la em mais de um elemento o nome da classe pode ser qualquer um, mas aqui foi usado como exemplo a palavra MEMORY -->
+        <small>20 de Março de 2023</small>
+        <!-- a tag small é uma tag de exibir textos pequenos -->
+        <h1>Jornada de Zero à primeira Vaga</h1>
+        <!-- a tag h1 exibe textos grandes como títulos -->
+      <div>
+        <img
+          src="assets/jornada.png"
+          alt="Rodrigo e Mayk aprensentando o evento Jornada do Zero à primeira vaga"
+        />
+      </div>
+        <!-- src é o caminho até a pasta da imagem q eu quero exibir, e o alt é uma menssagem alternativa caso a imagem não apareça por qualquer motivo q seja -->
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+          et quas molestias excepturi sint occaecati cupiditate non provident,
+          similique...
+        </p>
+        <!-- p é o paragrafo -->
+      </a>
+      <a
+        href="https://www.youtube.com/watch?v=izXLorq9UIk&t=1304s"
+        target="_blank"
+        class="memory"
+      >
+        <!-- A classe é usada quando se quer aproveita-la em mais de um elemento o nome da classe pode ser qualquer um, mas aqui foi usado como exemplo a palavra MEMORY -->
+        <small>20 de Março de 2023</small>
+        <h1>Jornada de Zero à primeira Vaga</h1>
+        <div>
+          <img
+            src="assets/jornada.png"
+            alt="Rodrigo e Mayk aprensentando o evento Jornada do Zero à primeira vaga"
+          />
+        </div>
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+          et quas molestias excepturi sint occaecati cupiditate non provident,
+          similique...
+        </p>
+      </a>
+      <a
+        href="https://www.youtube.com/watch?v=izXLorq9UIk&t=1304s"
+        target="_blank"
+        class="memory"
+      >
+        <!-- A classe é usada quando se quer aproveita-la em mais de um elemento o nome da classe pode ser qualquer um, mas aqui foi usado como exemplo a palavra MEMORY -->
+        <small>20 de Março de 2023</small>
+        <h1>Jornada de Zero à primeira Vaga</h1>
+        <div>
+          <img
+            src="assets/jornada.png"
+            alt="Rodrigo e Mayk aprensentando o evento Jornada do Zero à primeira vaga"
+          />
+        </div>
+        <p>
+          At vero eos et accusamus et iusto odio dignissimos ducimus qui
+          blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+          et quas molestias excepturi sint occaecati cupiditate non provident,
+          similique...
+        </p>
+      </a>
+    </nav>
+  </body>
+</html>
